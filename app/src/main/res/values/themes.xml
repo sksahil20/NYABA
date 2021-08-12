@@ -34,4 +34,13 @@
         <item name="android:textSize">20dp</item>
         <item name="colorControlNormal">@color/white</item>
     </style>
+
+    <style name="navigationTheme">
+
+        <!--Color of text and icon when Selected-->
+        <item name="colorPrimary">@color/yellow</item>
+        <item name="colorControlHighlight">@color/black</item>
+
+    </style>
+
 </resources>

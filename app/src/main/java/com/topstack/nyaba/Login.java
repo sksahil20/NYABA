@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
 
-    TextView singUp;
+    TextView singUpTV;
     Button login;
 
     @Override
@@ -38,11 +38,13 @@ public class Login extends AppCompatActivity {
             }
         });
 
-        singUp = findViewById(R.id.sing_up_btn);
-        singUp.setOnClickListener(new View.OnClickListener() {
+        singUpTV = findViewById(R.id.sing_up_btn);
+        singUpTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Login.this, "Create account Toast", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Login.this,SingUp.class);
+                startActivity(intent);
+                finish();
             }
         });
 

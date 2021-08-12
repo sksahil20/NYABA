@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="10dp"
+    tools:context=".SingUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Register"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/yellow"
+        android:textSize="30sp"
+        android:textStyle="normal" />
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/regUserImg"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/reg_profile_img" />
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="10dp"
+            app:cardBackgroundColor="@color/primary_gray"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="4dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:hint="First Name"
+                    android:textColorHint="@color/white"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/yellow">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/reg_full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textPersonName" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:hint="Email Address"
+                    android:textColorHint="@color/white"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/yellow">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/reg_email_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textPersonName"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:hint="Password"
+                    android:textColorHint="@color/white"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/yellow">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/reg_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:hint="Conform Password"
+                    android:textColorHint="@color/white"
+                   app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/yellow">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/reg_conform_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <android.widget.Button
+            android:id="@+id/sing_btn_dash"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style_ylo"
+            android:text="Sing Up"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Already have an account?"
+                android:textColor="#6E798A"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/openLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:text="Login"
+                android:textColor="#FDB32A"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

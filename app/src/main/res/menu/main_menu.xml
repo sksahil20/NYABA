@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/home"
+            android:iconTint="@color/yellow"/>
+
+        <item
+            android:id="@+id/nav_connect"
+            android:title="Connect"
+            android:icon="@drawable/plus_circle"
+            android:iconTint="@color/yellow"/>
+
+        <item
+            android:id="@+id/nav_feedback"
+            android:title="Feedback"
+            android:icon="@drawable/ic_baseline_feedback_24"
+            android:iconTint="@color/yellow"/>
+
+        <item
+            android:id="@+id/nav_payment"
+            android:title="Payment"
+            android:icon="@drawable/ic_baseline_payments_24"
+            android:iconTint="@color/yellow"/>
+
+        <item android:title="Profile Setting">
+
+            <menu>
+
+                <group android:checkableBehavior="single">
+
+                    <item
+                        android:id="@+id/nav_profile"
+                        android:title="Profile"
+                        android:icon="@drawable/user"
+                        android:iconTint="@color/yellow"/>
+
+                    <item android:title="Sing Out"
+                        android:id="@+id/nav_log_out"
+                        android:icon="@drawable/log_out"
+                        android:iconTint="@color/yellow"/>
+
+
+
+                </group>
+
+            </menu>
+
+        </item>
+
+    </group>
+
+
+</menu>

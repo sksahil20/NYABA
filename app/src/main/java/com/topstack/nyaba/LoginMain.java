@@ -40,6 +40,15 @@ public class LoginMain extends AppCompatActivity {
             }
         });
 
+        singUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginMain.this,SingUp.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
 
     }
 }
