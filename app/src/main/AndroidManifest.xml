@@ -18,7 +18,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NyabaApp">
-        <activity android:name=".FeedBack"></activity>
+        <activity android:name=".TransferFund"></activity>
+        <activity android:name=".ConfirmDetails">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FeedBack" />
         <activity android:name=".BookingInfo" />
         <activity android:name=".ContactInfo" />
         <activity android:name=".SingUp" />
@@ -43,13 +51,7 @@
         <activity android:name=".SetNewPassword" />
         <activity android:name=".verifyOTP" />
         <activity android:name=".ForgotPassword" />
-        <activity android:name=".SplashScreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".SplashScreen"></activity>
         <activity android:name=".OnBoarding" />
         <activity android:name=".LoginMain" />
         <activity android:name=".Login" />

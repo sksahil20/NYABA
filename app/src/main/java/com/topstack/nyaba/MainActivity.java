@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         menuIcon = findViewById(R.id.menu_icon);
 
         drawerLayout = findViewById(R.id.drawer_layout);
-        navigationView = findViewById(R.id.nav_view);
+//        navigationView = findViewById(R.id.nav_view);
 
         bookingToInfo = findViewById(R.id.book_to_info);
         bookingToInfo.setOnClickListener(new View.OnClickListener() {
