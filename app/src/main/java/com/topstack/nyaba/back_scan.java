@@ -104,7 +104,7 @@ public class back_scan extends AppCompatActivity {
     }
 
     public void next1(View view) {
-        Intent myIntent = new Intent(back_scan.this, WellDone.class);
+        Intent myIntent = new Intent(back_scan.this, ConfirmDetails.class);
         back_scan.this.startActivity(myIntent);
         finish();
     }

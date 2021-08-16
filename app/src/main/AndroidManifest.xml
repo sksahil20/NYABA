@@ -18,15 +18,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NyabaApp">
-        <activity android:name=".Receipt"></activity>
+        <activity android:name=".Payment"></activity>
+        <activity android:name=".Receipt" />
         <activity android:name=".TransferFund" />
-        <activity android:name=".ConfirmDetails">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".ConfirmDetails"></activity>
         <activity android:name=".FeedBack" />
         <activity android:name=".BookingInfo" />
         <activity android:name=".ContactInfo" />
@@ -53,7 +48,13 @@
         <activity android:name=".verifyOTP" />
         <activity android:name=".ForgotPassword" />
         <activity android:name=".SplashScreen" />
-        <activity android:name=".OnBoarding" />
+        <activity android:name=".OnBoarding">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".LoginMain" />
         <activity android:name=".Login" />
         <activity android:name=".MainActivity" />
